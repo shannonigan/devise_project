@@ -1,0 +1,15 @@
+<h1> Namaste <%= current_user.first_name %> </h1>
+<h3> Let's Flow </h3>
+
+  <%= @sequence.name %> :
+<br/>
+  <%= @sequence.body %>
+
+<br/>
+<br/>
+
+  <%= link_to 'Edit Sequence', edit_sequence_path(@sequence) %>
+  <br/>
+  <%= link_to 'Delete Sequence', sequence_path(@sequence), method: :delete %>
+  <br/>
+  <%= link_to 'Back', sequences_path %>

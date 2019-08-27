@@ -1,0 +1,17 @@
+<h1> Change It Up </h1>
+
+<%= form_with(model: @sequence, local: true) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body, required: true, placeholder: "Flow" %>
+  </div>
+
+
+  <%= f.submit %>
+
+<% end %>
